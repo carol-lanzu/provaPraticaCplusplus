@@ -127,5 +127,10 @@ int main()
 		}
 	} while (input != 0);
 
-	
+	//limpar vetor dinamico
+	for (int i = 0; i < vector_Vehicles.size(); i++)
+	{
+		delete vector_Vehicles.at(i);
+	}
+	return 0;
 }
