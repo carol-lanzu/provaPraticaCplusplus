@@ -1,8 +1,6 @@
 
 Atividade Prática
-Avaliação a ser desenvolvida individualmente, em computador e em Linguagem C++. Submeter via moodle o código
-fonte da solução do problema. Código deve compilar corretamente para poder ser corrigido. Trabalhos com certo
-grau de similaridade serão zerados. Consulta SOMENTE ao Moodle permitida.
+Linguagem C++.
 Criar uma estrutura hierárquica de classes que possibilite definir a hierarquia de um sistema de
 transporte, conforme segue:
 Logo, tem-se que a super-classe é Vehicle, uma classe que pode ser abstrata, e todas as demais são subclasses instanciáveis (Car, Bus, LightTruck, HeavyTruck). Os construtores de cada classe devem permitir
