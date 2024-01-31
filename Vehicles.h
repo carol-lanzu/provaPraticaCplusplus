@@ -7,23 +7,16 @@ class Vehicles
 public:
 	string placa;
 	string descricao;
+	int sum_rota;
 //construtor
-	//Vehicles() {};
-	//Vehicles ( string placa,string descricao) 
 	Vehicles()
 	{
-		//string placa = "";
-		//string descricao= "";
 		placa = "";
 		descricao = "";
+		sum_rota = 0;
 	}
-	//virtual void show(vector< pair< string, int> > root) =0;
-	/*{
-		int sum_km = 0;
-		if(! root.empty())
-		{for(int i=0; i< root.size(); )
-		root.at()
-	}*/
+	virtual void show() = 0;
+	
 };
 class Car : public Vehicles
 {
@@ -33,7 +26,11 @@ public:
 		placa = a;
 		descricao = b;
 	};
-	//void show(vector< pair< string, int> > root)
+	void show()
+	{
+		cout << "the total km of the routes are: " << sum_rota << " km" << endl;
+		cout << "the sum of gas is:"<< sum_rota / 12 << " L" << endl;
+	}
 	
 };
 
@@ -45,6 +42,11 @@ class Bus : public Vehicles
 		placa = a;
 		descricao = b;
 	};
+		void show()
+		{
+			cout << "the total km of the routes are: " << sum_rota << " km" << endl;
+			cout << "the sum of gas is:" << sum_rota / 7 << " L" << endl;
+		}
 };
 
 class LightTruck : public Vehicles
@@ -55,6 +57,11 @@ public:
 		placa = a;
 		descricao = b;
 	};
+	void show()
+	{
+		cout << "the total km of the routes are: " << sum_rota << " km" << endl;
+		cout << "the sum of gas is:" << sum_rota / 4 << " L" << endl;
+	}
 };
 
 class HeavyTruck : public Vehicles
@@ -65,4 +72,9 @@ public:
 		placa = a;
 		descricao = b;
 	};
+	void show()
+	{
+		cout << "the total km of the routes are: " << sum_rota << " km" << endl;
+		cout << "the sum of gas is:" << sum_rota / 2 << " L" << endl;
+	}
 };

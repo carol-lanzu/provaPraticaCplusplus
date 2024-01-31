@@ -9,9 +9,6 @@ using  namespace std;
 
 int main()
 {
-	//Vehicles* first ;
-	//first = new Car;
-	//Vehicles first ("AAA", "ford"); como inicializar assim?
 	int input;
 	int type;
 	vector < Vehicles*> vector_Vehicles;
@@ -82,6 +79,7 @@ int main()
 					cout << "route and km:";
 					cin >> route >> km;
 					vector_root.push_back(make_pair(route, km));
+					vector_Vehicles.at(i)->sum_rota += km;
 					cout << "sucessful task!\n";
 					continue;
 				}
@@ -92,7 +90,16 @@ int main()
 		}
 		if (input == 3)
 		{
-			//metodo virtual loop no vector vehiicles
+			//metodo virtual: loop no vector vehiicles
+			//e listar todos, a sua total km e L combustível 
+			if (!vector_Vehicles.empty()) 
+			{
+				for (int i = 0; i < vector_Vehicles.size(); i++)
+				{
+					cout << "Number: " << i << endl; 
+					vector_Vehicles.at(i)->show();
+				}
+			}
 			continue;
 		}
 		if (input == 4)
