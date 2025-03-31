@@ -1,6 +1,5 @@
-
-##Atividade Prática  
-###Linguagem C++  
+## Atividade Prática  
+### Linguagem C++  
 Criar uma estrutura hierárquica de classes que possibilite definir a hierarquia de um sistema de
 transporte, conforme segue:  
 Logo, tem-se que a super-classe é Vehicle, uma classe que pode ser abstrata, e todas as demais são subclasses instanciáveis (Car, Bus, LightTruck, HeavyTruck). Os construtores de cada classe devem permitir
